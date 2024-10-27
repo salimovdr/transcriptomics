@@ -1,7 +1,7 @@
 # Changes in the Activity of the NFAT Signaling Pathway in Humans and Chimpanzees
 
 ## Abstract
-Evolutionary differences between humans and chimpanzees have led to unique adaptations in the cardiovascular system, reflecting distinct physiological needs and lifestyles. The NFAT (Nuclear Factor of Activated T-cells) signaling pathway plays a crucial role in regulating cardiac function, including cardiac hypertrophy, tissue remodeling, and adaptation to mechanical stress [^1].
+Evolutionary differences between humans and chimpanzees have led to unique adaptations in the cardiovascular system, reflecting distinct physiological needs and lifestyles. The NFAT (Nuclear Factor of Activated T-cells) signaling pathway plays a crucial role in regulating cardiac function, including cardiac hypertrophy, tissue remodeling, and adaptation to mechanical stress [1].
 
 In this study, I analyze changes in the activity of the NFAT signaling pathway in the cardiac tissue of humans and chimpanzees. Using RNA-seq data from the cardiac muscle of both species, I compare the expression of NFAT-related genes to identify potential evolutionary differences in pathway activation. Our results show that humans exhibit increased expression of specific NFAT pathway genes associated with cardiac adaptation to sustained loads and enhanced endurance. This may reflect an evolutionary adaptation to bipedalism and increased lifespan, which require consistent cardiac function.
 
@@ -57,7 +57,7 @@ The findings indicate that humans exhibit increased expression of NFAT pathway-r
 
 Significant differences in NFAT pathway activity between human and chimpanzee cardiac tissue were identified in this study. Differential expression analysis showed that most NFAT-related genes exhibit substantial differential expression, with an absolute log fold change (|logFC|) greater than 8 and p-values < 0.05. This indicates a significantly higher NFAT pathway activity in human cardiac tissue compared to that of chimpanzees.
 
-The GSEA results confirmed these observations: the normalized enrichment score (NES) was 1.44 with a p-value of 0.029, indicating statistically significant enrichment of NFAT pathway genes among the differentially expressed genes in humans. Thus, the data suggest that the NFAT signaling pathway plays a more substantial role in regulating cardiac function in humans, potentially reflecting evolutionary adaptations to sustained aerobic activity[^5].
+The GSEA results confirmed these observations: the normalized enrichment score (NES) was 1.44 with a p-value of 0.029, indicating statistically significant enrichment of NFAT pathway genes among the differentially expressed genes in humans. Thus, the data suggest that the NFAT signaling pathway plays a more substantial role in regulating cardiac function in humans, potentially reflecting evolutionary adaptations to sustained aerobic activity[2].
 
 The observed increased NFAT pathway activity in humans may reflect cardiovascular system adaptations to the demands of bipedalism and prolonged physical activity. The human heart must sustain effective function during extended activities, such as walking and running long distances. Elevated expression of NFAT pathway genes may contribute to the development of physiological hypertrophy in cardiomyocytes and enhance the heart's ability to adapt to continuous mechanical loads.
 
@@ -67,7 +67,7 @@ In contrast, chimpanzees, whose lifestyle involves episodic, high-intensity phys
 
 ### Data Sources
 
-This study used gene expression data from Jung et al. (2020), "Gene expression variability in human and chimpanzee populations share common determinants"[^2]. The raw data, including counts for humans and chimpanzees RNA-seq, are available in the NCBI GEO database under the identifier GSE151397.
+This study used gene expression data from Jung et al. (2020), "Gene expression variability in human and chimpanzee populations share common determinants"[3]. The raw data, including counts for humans and chimpanzees RNA-seq, are available in the NCBI GEO database under the identifier GSE151397.
 
 ### Samples
 
@@ -81,7 +81,7 @@ Only orthologous genes between humans and chimpanzees were selected, using the h
 
 ### Data Normalization
 
-TMM (Trimmed Mean of M-values) normalization was applied, followed by conversion to CPM (Counts Per Million) and log transformation. This approach is appropriate because TMM normalization accounts for differences in library sizes and gene composition across samples, which is particularly important when comparing data from different species[^3]. Log transformation stabilizes data variance and improves conditions for subsequent statistical analysis[^4].
+TMM (Trimmed Mean of M-values) normalization was applied, followed by conversion to CPM (Counts Per Million) and log transformation. This approach is appropriate because TMM normalization accounts for differences in library sizes and gene composition across samples, which is particularly important when comparing data from different species[4]. Log transformation stabilizes data variance and improves conditions for subsequent statistical analysis[5].
 
 ### Data Analysis
 
@@ -125,12 +125,9 @@ To assess the relative activity of the NFAT pathway between humans and chimpanze
 
 ## References
 
-[^1]: Wang, Hui, Su, Wenhua, Zhang, Shuojie, Wang, Lulin, Zhao, Panpan, Zhang, Tongtong, Xie, Xiaoli, Dan, Juhua, "How does NFAT3 regulate the occurrence of cardiac hypertrophy?" IJC Heart & Vasculature, vol. 48, 2023, p. 101271, ISSN 2352-9067, https://doi.org/10.1016/j.ijcha.2023.101271.
+1. Wang, Hui, Su, Wenhua, Zhang, Shuojie, Wang, Lulin, Zhao, Panpan, Zhang, Tongtong, Xie, Xiaoli, Dan, Juhua, "How does NFAT3 regulate the occurrence of cardiac hypertrophy?" IJC Heart & Vasculature, vol. 48, 2023, p. 101271, ISSN 2352-9067, https://doi.org/10.1016/j.ijcha.2023.101271.
+2. Wilkins, B., Dai, Y., Bueno, O., Parsons, S., Xu, J., Plank, D., Jones, F., Kimball, T., & Molkentin, J. (2004). Calcineurin/NFAT Coupling Participates in Pathological, but not Physiological, Cardiac Hypertrophy. Circulation Research: Journal of the American Heart Association, 94, 110-118. https://doi.org/10.1161/01.RES.0000109415.17511.18.
+3. Benjamin Jung, Lauren E. Blake, Abhishek Sarkar, Bryan J. Pavlovic, Claudia Cuevas, Yoav Gilad (2020). "Gene expression variability in human and chimpanzee populations share common determinants." *eLife*, 9:e59929. https://doi.org/10.7554/eLife.59929
+4. Singh, V., Kirtipal, N., Song, B.-S., Lee, S. (2023). Normalization of RNA-Seq Data using Adaptive Trimmed Mean with Multi-reference. Briefings in Bioinformatics. https://doi.org/10.1093/bib/bbae241
+5. Lun, A. (Year). Overcoming systematic errors caused by log-transformation of normalized single-cell RNA sequencing data. bioRxiv, Preprint, 404962. https://doi.org/10.1101/404962
 
-[^2]: Benjamin Jung, Lauren E. Blake, Abhishek Sarkar, Bryan J. Pavlovic, Claudia Cuevas, Yoav Gilad (2020). "Gene expression variability in human and chimpanzee populations share common determinants." *eLife*, 9:e59929. https://doi.org/10.7554/eLife.59929
-
-[^3]: Singh, V., Kirtipal, N., Song, B.-S., Lee, S. (2023). Normalization of RNA-Seq Data using Adaptive Trimmed Mean with Multi-reference. Briefings in Bioinformatics. https://doi.org/10.1093/bib/bbae241
-
-[^4]: Lun, A. (Year). Overcoming systematic errors caused by log-transformation of normalized single-cell RNA sequencing data. bioRxiv, Preprint, 404962. https://doi.org/10.1101/404962
-
-[^5]: Wilkins, B., Dai, Y., Bueno, O., Parsons, S., Xu, J., Plank, D., Jones, F., Kimball, T., & Molkentin, J. (2004). Calcineurin/NFAT Coupling Participates in Pathological, but not Physiological, Cardiac Hypertrophy. Circulation Research: Journal of the American Heart Association, 94, 110-118. https://doi.org/10.1161/01.RES.0000109415.17511.18.
