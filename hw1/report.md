@@ -27,6 +27,7 @@ This study utilized gene expression data from Jung et al. (2020), where cardiac 
 To assess overall gene expression patterns and data quality, a principal component analysis (PCA) was performed. The PCA results showed clear separation of samples by species, indicating substantial differences in gene expression profiles between human and chimpanzee cardiac tissue (Figure 1). Samples grouped according to their species, confirming the absence of significant technical artifacts and the high quality of the data.
 
 ![](pictures//PCA-1.svg)
+
 *Figure 1. Principal Component Analysis (PCA) plot showing the clustering of human and chimpanzee cardiac tissue samples based on gene expression profiles.*
 
 
@@ -35,6 +36,7 @@ To assess overall gene expression patterns and data quality, a principal compone
 A differential expression analysis was conducted to identify genes associated with the NFAT signaling pathway that exhibit significant differences between the two species. Most genes related to NFAT showed substantial differential expression with an absolute log fold change |logFC| > 8 and p-values < 0.05 (Figure 2). These results indicate significant changes in NFAT pathway activity in human cardiac tissue compared to that of chimpanzees.
 
 ![volcano-plot.svg](pictures//volcano-plot-1.svg)
+
 *Figure 2. Volcano plot showing differential expression of genes associated with the NFAT signaling pathway in human and chimpanzee cardiac tissue.*
 
 
@@ -43,7 +45,8 @@ A differential expression analysis was conducted to identify genes associated wi
 To assess the overall change in NFAT pathway activity, a Gene Set Enrichment Analysis (GSEA) was conducted. Results showed a normalized enrichment score (NES) of 1.44 with a p-value of 0.029, indicating statistically significant enrichment of NFAT pathway genes among differentially expressed genes (Figure 3). This supports the hypothesis of increased NFAT pathway activity in human cardiac tissue.
 
 ![gsea-plot.svg](pictures//gsea-plot-1.svg)
-*Figure 3. Gene Set Enrichment Analysis (GSEA) results for the NFAT signaling pathway in human and chimpanzee cardiac tissue. *
+
+*Figure 3. Gene Set Enrichment Analysis (GSEA) results for the NFAT signaling pathway in human and chimpanzee cardiac tissue.*
 
 
 ### Interpretation of Results
@@ -100,6 +103,7 @@ Duplicates and genes with missing values were removed. Subsequently, 16 000 gene
 Principal component analysis (PCA) was performed to visualize the data structure and identify potential outliers. The PCA results showed clear species separation (Figure 1). However, outliers were observed within each species. Sample clustering confirmed the presence of these outliers, which formed separate clusters (Figure 5). It was decided to exclude these samples from further analysis, resulting in 38 human samples and 38 chimpanzee samples.
 
 ![Figure 5.png](pictures//Figure%205-1.png)
+
 *Fugure 5. The outliers clustered separately, which is consistent with the data on the PCA plot.*
 
 ### Gene Clustering
@@ -107,6 +111,7 @@ Principal component analysis (PCA) was performed to visualize the data structure
 Gene clustering was performed to identify similar expression patterns. The top 100 genes with the highest expression levels were selected from each cluster. Seven clusters were identified with dominant functional gene groups, allowing for a more detailed analysis of their roles in cardiac tissue (Figure 6).
 
 ![Figure6.png](pictures//Figure6.png)
+
 *Figure 6. Main gene groups identified through clustering.*
 
 ### Differential Expression Analysis
