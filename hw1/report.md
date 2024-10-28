@@ -81,7 +81,7 @@ Only orthologous genes between humans and chimpanzees were selected, using the h
 
 ### Data Normalization
 
-TMM (Trimmed Mean of M-values) normalization was applied, followed by conversion to CPM (Counts Per Million) and log transformation. This approach is appropriate because TMM normalization accounts for differences in library sizes and gene composition across samples, which is particularly important when comparing data from different species[4]. Log transformation stabilizes data variance and improves conditions for subsequent statistical analysis[5].
+TMM (Trimmed Mean of M-values) normalization was applied, followed by conversion to CPM (Counts Per Million) and log transformation. These transformations were performed using the edgeR package in the R ([link to script](https://github.com/salimovdr/transcriptomics/blob/main/hw1/TMM_normalization.R)). This approach is appropriate because TMM normalization accounts for differences in library sizes and gene composition across samples, which is particularly important when comparing data from different species[4]. Log transformation stabilizes data variance and improves conditions for subsequent statistical analysis[5].
 
 ### Data Analysis
 
@@ -129,5 +129,5 @@ To assess the relative activity of the NFAT pathway between humans and chimpanze
 2. Wilkins, B., Dai, Y., Bueno, O., Parsons, S., Xu, J., Plank, D., Jones, F., Kimball, T., & Molkentin, J. (2004). Calcineurin/NFAT Coupling Participates in Pathological, but not Physiological, Cardiac Hypertrophy. Circulation Research: Journal of the American Heart Association, 94, 110-118. https://doi.org/10.1161/01.RES.0000109415.17511.18.
 3. Benjamin Jung, Lauren E. Blake, Abhishek Sarkar, Bryan J. Pavlovic, Claudia Cuevas, Yoav Gilad (2020). "Gene expression variability in human and chimpanzee populations share common determinants." *eLife*, 9:e59929. https://doi.org/10.7554/eLife.59929
 4. Singh, V., Kirtipal, N., Song, B.-S., Lee, S. (2023). Normalization of RNA-Seq Data using Adaptive Trimmed Mean with Multi-reference. Briefings in Bioinformatics. https://doi.org/10.1093/bib/bbae241
-5. Lun, A. (Year). Overcoming systematic errors caused by log-transformation of normalized single-cell RNA sequencing data. bioRxiv, Preprint, 404962. https://doi.org/10.1101/404962
+5. Lun, A. (2018). Overcoming systematic errors caused by log-transformation of normalized single-cell RNA sequencing data. bioRxiv, Preprint, 404962. https://doi.org/10.1101/404962
 
