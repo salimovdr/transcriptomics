@@ -81,7 +81,7 @@ Only orthologous genes between humans and chimpanzees were selected, using the h
 
 ### Data Normalization
 
-TMM (Trimmed Mean of M-values) normalization was applied, followed by conversion to CPM (Counts Per Million) and log transformation. These transformations were performed using the edgeR package in the R ([link to script](https://github.com/salimovdr/transcriptomics/blob/main/hw1/TMM_normalization.R)). This approach is appropriate because TMM normalization accounts for differences in library sizes and gene composition across samples, which is particularly important when comparing data from different species[4]. Log transformation stabilizes data variance and improves conditions for subsequent statistical analysis[5].
+TMM (Trimmed Mean of M-values) normalization was applied, followed by conversion to CPM (Counts Per Million) and log transformation. These transformations were performed using the edgeR package in the R ([link to script](https://github.com/salimovdr/transcriptomics/blob/main/hw1/TMM_normalization.R)). This approach is appropriate because TMM normalization accounts for differences in library sizes and gene composition across samples, which is particularly important when comparing data from different species[4]. Log transformation stabilizes data variance and improves conditions for subsequent statistical analysis [5].
 
 ### Data Analysis
 
@@ -100,7 +100,7 @@ Duplicates and genes with missing values were removed. Subsequently, 16 000 gene
 
 ### Principal Component Analysis (PCA) and sample clustering
 
-Principal component analysis (PCA) was performed to visualize the data structure and identify potential outliers. The PCA results showed clear species separation (Figure 1). However, outliers were observed within each species. Sample clustering confirmed the presence of these outliers, which formed separate clusters (Figure 5). It was decided to exclude these samples from further analysis, resulting in 38 human samples and 38 chimpanzee samples.
+Principal component analysis (PCA) was performed to visualize the data structure and identify potential outliers. The PCA results showed clear species separation (Figure 1). However, outliers were observed within each species. Sample clustering (k-means, count of clusters is 12) confirmed the presence of these outliers, which formed separate clusters (Figure 5). It was decided to exclude these samples from further analysis, resulting in 38 human samples and 38 chimpanzee samples.
 
 ![Figure 5.png](pictures//Figure%205-1.png)
 
