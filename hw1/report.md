@@ -100,7 +100,7 @@ Duplicates and genes with missing values were removed. Subsequently, 16 000 gene
 
 ### Principal Component Analysis (PCA) and sample clustering
 
-Principal component analysis (PCA) was performed to visualize the data structure and identify potential outliers. The PCA results showed clear species separation (Figure 1). However, outliers were observed within each species. Sample clustering (k-means, count of clusters is 12) confirmed the presence of these outliers, which formed separate clusters (Figure 5). It was decided to exclude these samples from further analysis, resulting in 38 human samples and 38 chimpanzee samples.
+Principal component analysis (PCA) was performed to visualize the data structure and identify potential outliers. The PCA results showed clear species separation (Figure 1). However, outliers were observed within each species. Sample clustering (k-means, number of clusters is 12) confirmed the presence of these outliers, which formed separate clusters (Figure 5). It was decided to exclude these samples from further analysis, resulting in 38 human samples and 38 chimpanzee samples.
 
 ![Figure 5.png](pictures//Figure%205-1.png)
 
